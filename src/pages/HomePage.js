@@ -1,5 +1,6 @@
 import React from 'react'
 import { Fade } from 'react-bootstrap'
+import Card from '../components/Card'
 import Drawer from '../components/Drawer'
 import Header from '../components/Header'
 import Logo from '../components/Logo'
@@ -16,7 +17,8 @@ const HomePage = ({ isOpen, setIsOpen }) => {
                     <div>
                         <Header setIsOpen={setIsOpen} />
                         {/* <Test /> */}
-                        {/* <Navigation /> */}
+                        <Navigation />
+                        {/* <Card/> */}
                         <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
                         </Drawer>
                     </div>

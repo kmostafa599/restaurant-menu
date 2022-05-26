@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from '../components/Card'
 import Drawer from '../components/Drawer'
 import Header from '../components/Header'
 import Logo from '../components/Logo'
@@ -50,7 +51,7 @@ const SplashPage = ({ isOpen, setIsOpen }) => {
 
 
                     </Drawer>
-
+<Card/>
                 </div>
 
                 <div className='hidden md:block md:h-full'>
