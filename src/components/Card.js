@@ -1,8 +1,10 @@
+import { Fade } from '@mui/material'
 import React from 'react'
 
 const Card = () => {
     return (
         <div >
+            <Fade in={true} timeout={3000}>
             <div className='grid grid-rows-3 grid-cols-5 border-2 m-2 rounded-xl h-[150px]'>
                 <div className='row-span-3 col-span-2'>
                     {/* <div className=''> */}
@@ -26,6 +28,8 @@ const Card = () => {
                 </button></div>
             </div>
 
+            </Fade>
+            
         </div>
     )
 }

@@ -1,88 +1,14 @@
-import { useState, React } from 'react'
-import { ArrowBackIosNew } from '@mui/icons-material';
-import NotesIcon from '@mui/icons-material/Notes';
-import SegmentIcon from '@mui/icons-material/Segment';
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import {  React } from 'react'
 import { Link, useLocation } from 'react-router-dom';
 
 
 
 export default function Header({ setIsOpen }) {
-  const [drawerState, setDrawerState] = useState(false);
   const location = useLocation()
-  // const toggleDrawer = (open)=>{
-  //   setDrawerState(open)
-  // }
-  // const component = (button) =>(
-  //   <Box
-  //   sx={{width:'auto'}}
-  //   role='presentation'
-  //   onClick={setDrawerState(false)}
-  //   onKeyDown={setDrawerState(false)}
-  //   >
-  //     <List>
-  //       {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-  //         <ListItem button key={text}>
-  //           <ListItemIcon>
-  //             {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-  //           </ListItemIcon>
-  //           <ListItemText primary={text} />
-  //         </ListItem>
-  //       ))}
-  //     </List>
-  //     <Divider />
-  //     <List>
-  //       {['All mail', 'Trash', 'Spam'].map((text, index) => (
-  //         <ListItem button key={text}>
-  //           <ListItemIcon>
-  //             {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-  //           </ListItemIcon>
-  //           <ListItemText primary={text} />
-  //         </ListItem>
-  //       ))}
-  //     </List>
-  //   </Box>
-  // )
+  
   console.log(location)
   return (
     <div className={`flex  ${location.pathname === '/store' ? 'justify-between' : 'justify-end'} p-3 md:border-r-2`}>
-      {/* <div  style={{display:'flex',
-        position:'relative',
-        // justifyContent:'center'
-        }}>
-            <button className='btn btn-white shadow  ' style={{position:'absolute',left:'0%',width:"40px",height:"40px",justifyItems:"center"}}>
-               <ArrowBackIosNew style={{width:'20px',height:'20px',position:'absolute',top:'50%',left:'50%',transform:'translate(-50%,-50%)'}}
-/>
-            </button>
-            
-                <div style={{width:'25px',height:'40px',position:"absolute",left:'50%',justifyItems:'center'}}>
-                <img  style={{width:'75px',height:'75px',position:"absolute",left:'50%',top:'50%',transform:'translate(-50%,-50%)'}} src="https://i.etsystatic.com/20646407/r/il/4d331f/1985567355/il_fullxfull.1985567355_85xe.jpg"/>
-
-                </div>
-                <Drawer
-      anchor='bottom'
-      open={drawerState}
-      onClose={setDrawerState(false)}
-    >
-     Helllooooo
-    </Drawer>
-            <button onClick={()=>{setDrawerState(true)}} className='btn btn-white shadow '
-             style={{position:'absolute',right:'0%',width:'40px',height:'40px'}}>
-                  <NotesIcon style={{width:'20px',height:'20px',position:'absolute',top:'50%',left:'50%',transform:'translate(-50%,-50%)',}}/>
-             </button>
-        </div>   */}
-
-
-
       {location.pathname === '/store' ?
         <div>
           <Link to='/' >

@@ -15,9 +15,6 @@ const MyRoutes = () => {
             <Route path='/' element={<SplashPage isOpen={isOpen} setIsOpen={setIsOpen} />} />
             <Route path='/store' element={<HomePage isOpen={isOpen} setIsOpen={setIsOpen}  />} />
             <Route path='/product' element={<ProductsPage />} />
-
-
-
         </Routes>)
 }
 

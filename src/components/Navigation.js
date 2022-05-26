@@ -46,7 +46,7 @@ TabPanel.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
-const  Navigation = React.forwardRef((props,ref) =>{
+const Navigation = React.forwardRef((props, ref) => {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -60,76 +60,74 @@ const  Navigation = React.forwardRef((props,ref) =>{
   }
   const categories = [
     {
-      id:1,
-      name:"Pizza",
-      photo:"https://media.istockphoto.com/photos/full-table-of-italian-meals-on-plates-pizza-pasta-ravioli-carpaccio-picture-id1227415751?k=20&m=1227415751&s=170667a&w=0&h=jSWQmXeJbgjpMPbC141v52dN0TATyhHGG20qrgvW1OE=",
-      price:"30$",
+      id: 1,
+      name: "Pizza",
+      photo: "https://media.istockphoto.com/photos/full-table-of-italian-meals-on-plates-pizza-pasta-ravioli-carpaccio-picture-id1227415751?k=20&m=1227415751&s=170667a&w=0&h=jSWQmXeJbgjpMPbC141v52dN0TATyhHGG20qrgvW1OE=",
+      price: "30$",
     },
     {
-      id:2,
-      name:"sushi",
-      photo:"https://media.istockphoto.com/photos/full-table-of-italian-meals-on-plates-pizza-pasta-ravioli-carpaccio-picture-id1227415751?k=20&m=1227415751&s=170667a&w=0&h=jSWQmXeJbgjpMPbC141v52dN0TATyhHGG20qrgvW1OE=",
-      price:"30$",
-  },
+      id: 2,
+      name: "sushi",
+      photo: "https://finedine.imgix.net/X0qgORHkY/e952ac6f-c7ae-4a93-9615-d44d1e061d04.jpg?auto=format,&fit=crop&w=90&h=60",
+      price: "30$",
+    },
     {
-      id:3,
-      name:"whatever",
-      photo:"https://media.istockphoto.com/photos/full-table-of-italian-meals-on-plates-pizza-pasta-ravioli-carpaccio-picture-id1227415751?k=20&m=1227415751&s=170667a&w=0&h=jSWQmXeJbgjpMPbC141v52dN0TATyhHGG20qrgvW1OE=",
-      price:"30$",
+      id: 3,
+      name: "whatever",
+      photo: "https://finedine.imgix.net/X0qgORHkY/e4958c1b-2275-421f-ad43-5ef4df76f6ba.jpg?auto=format,&fit=crop&w=90&h=60",
+      price: "30$",
     },
   ];
   const products = [
     {
-      
-     category_id:1,
-      name:null,
-      photo:"https://media.istockphoto.com/photos/full-table-of-italian-meals-on-plates-pizza-pasta-ravioli-carpaccio-picture-id1227415751?k=20&m=1227415751&s=170667a&w=0&h=jSWQmXeJbgjpMPbC141v52dN0TATyhHGG20qrgvW1OE=",
-      price:"30$",
+
+      category_id: 1,
+      name: null,
+      photo: "https://media.istockphoto.com/photos/full-table-of-italian-meals-on-plates-pizza-pasta-ravioli-carpaccio-picture-id1227415751?k=20&m=1227415751&s=170667a&w=0&h=jSWQmXeJbgjpMPbC141v52dN0TATyhHGG20qrgvW1OE=",
+      price: "30$",
 
     },
     {
-      category_id:2,
-      name:"Pepsi",
-      photo:"https://media.istockphoto.com/photos/full-table-of-italian-meals-on-plates-pizza-pasta-ravioli-carpaccio-picture-id1227415751?k=20&m=1227415751&s=170667a&w=0&h=jSWQmXeJbgjpMPbC141v52dN0TATyhHGG20qrgvW1OE=",
-      price:"40$",
+      category_id: 2,
+      name: "Pepsi",
+      photo: "https://media.istockphoto.com/photos/full-table-of-italian-meals-on-plates-pizza-pasta-ravioli-carpaccio-picture-id1227415751?k=20&m=1227415751&s=170667a&w=0&h=jSWQmXeJbgjpMPbC141v52dN0TATyhHGG20qrgvW1OE=",
+      price: "40$",
 
     },
     {
-      category_id:2,
-      name:"Cola",
-      photo:"https://media.istockphoto.com/photos/full-table-of-italian-meals-on-plates-pizza-pasta-ravioli-carpaccio-picture-id1227415751?k=20&m=1227415751&s=170667a&w=0&h=jSWQmXeJbgjpMPbC141v52dN0TATyhHGG20qrgvW1OE=",
-      price:"10$",
+      category_id: 2,
+      name: "Cola",
+      photo: "https://media.istockphoto.com/photos/full-table-of-italian-meals-on-plates-pizza-pasta-ravioli-carpaccio-picture-id1227415751?k=20&m=1227415751&s=170667a&w=0&h=jSWQmXeJbgjpMPbC141v52dN0TATyhHGG20qrgvW1OE=",
+      price: "10$",
 
     },
   ]
-   
-  
+
+
   return (
     <div ref={ref} {...props}>
-        
-    <Box className="m-2"sx={{ width: '100%', }}>
-      <Box sx={{ width:"100%",borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs   textColor="secondary" sx={{background:"#fefefe"}}   TabIndicatorProps={{style:{transitionDuration:'1000',backgroundColor:"#e6034b"}}}variant="scrollable"scrollButtons="auto" aria-label="scrollable auto yabs example" value={value} onChange={handleChange} aria-label="basic tabs example">
-          {categories.map((data,index)=>(
- <Tab  icon={<Avatar sx={{width:'100px',height:'70px',borderRadius:'5%'}}src={data.photo}/>} label={data.name} {...a11yProps(0)} />
-          ))}
-        </Tabs>
+
+      <Box className="mt-2 mb-2 h-1/2" sx={{ width: '100%', }}>
+        <Box sx={{ width: "100%", borderColor: 'divider' }}>
+          <Tabs TransitionProps={{ timeout: 3000 }} className="" textColor="" style={{ color: "#e6034b" }} TabIndicatorProps={{ style: { transitionDuration: '1000', backgroundColor: "#e6034b" } }} variant="scrollable" scrollButtons="auto" aria-label="scrollable auto yabs example" value={value} onChange={handleChange} >
+            {categories.map((data, index) => (
+              <Tab className='p-2 text-2xl'icon={<Avatar className='mb-3' sx={{ width: '175px', height: '100px', borderRadius: '5%', }} src={data.photo} />} label={data.name} {...a11yProps(0)} />
+            ))}
+          </Tabs>
+        </Box>
+
+        {categories.map((data, index) => {
+          let product = products.filter((product) => product.category_id === data.id);
+          console.log(product)
+          return (
+            <TabPanel spacing={2} value={value} index={index}>
+              <Test categories={data} product={product} />
+            </TabPanel>
+          )
+        }
+        )}
       </Box>
 
-{categories.map((data,index)=>{let product = products.filter((product) =>product.category_id === data.id);
-console.log(product)
-return (
-<TabPanel spacing={2} value={value} index={index}>
-  <Test categories={data} product={product} />      
-</TabPanel>
-  )
-}
-)}
-
-
-
-    </Box>
-    
 
     </div>
   )
