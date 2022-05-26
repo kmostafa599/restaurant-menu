@@ -81,12 +81,18 @@ VAT EXCLUDED</h5>
         </Link>
           <img className=' w-full' src="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.jpg?w=2000" alt="product_image" /> </div>
       </div>
-      <div className='flex flex-col justify-center items-center m-5'>
-        <div>product name</div>
-        <div>time to deliver</div>
-        <div>icon</div>
-        <div>description</div>
-        <div className='w-full m-3 divide-y divide-slate-400  space-y-5'>
+      <div className='flex flex-col justify-center items-center m-3 '>
+        <div className='text-4xl'>product name</div>
+        <div className='flex text-xl'>
+          <div className='w-[25px] h-[20px] flex items-center '>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M.132 12c0 6.555 5.313 11.868 11.868 11.868 6.555 0 11.868-5.313 11.868-11.868C23.868 5.445 18.555.132 12 .132 5.445.132.132 5.445.132 12zm22.787 0c0 6.03-4.889 10.918-10.919 10.918S1.081 18.03 1.081 12C1.081 5.97 5.97 1.08 12 1.08S22.919 5.97 22.919 12zM6.303 13.424c0-.262.213-.474.475-.474H12V4.88a.475.475 0 11.95 0v9.019H6.778a.475.475 0 01-.475-.475z" fill="null"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12 .264C5.518.264.264 5.518.264 12c0 6.482 5.254 11.736 11.736 11.736 6.482 0 11.736-5.254 11.736-11.736C23.736 5.518 18.482.264 12 .264zM0 12C0 5.373 5.373 0 12 0s12 5.373 12 12-5.373 12-12 12S0 18.627 0 12zm.95 0C.95 5.897 5.896.95 12 .95 18.103.95 23.05 5.896 23.05 12c0 6.103-4.947 11.05-11.05 11.05C5.897 23.05.95 18.103.95 12zM12 1.213C6.043 1.213 1.213 6.043 1.213 12c0 5.957 4.83 10.787 10.787 10.787 5.957 0 10.787-4.83 10.787-10.787 0-5.958-4.83-10.787-10.787-10.787zm.475 3.323a.343.343 0 00-.343.343v8.202H6.778a.343.343 0 000 .686h6.04V4.879a.343.343 0 00-.343-.343zm.606 9.495V4.879a.607.607 0 00-1.213 0v7.939h-5.09a.606.606 0 100 1.213h6.303z" fill="null"></path></svg>
+
+          </div>
+                    5 Min
+        </div>
+        <div className='text-3xl'>icon</div>
+        <div className='text-2xl'>description</div>
+        <div className='w-full m-3 divide-y divide-slate-400  space-y-5 text-2xl'>
           <div className='grid grid-cols-2 '>
             <div>Chiken</div>
             <div className='justify-self-end text-[#E6034B]'>

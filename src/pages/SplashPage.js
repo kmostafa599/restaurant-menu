@@ -31,18 +31,23 @@ const SplashPage = ({ isOpen, setIsOpen }) => {
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div className={openTab === 2 ? "block" : "hidden"} id="link1">
-                                <p>
-                                    Collaboratively administrate empowered markets via
-                                    plug-and-play networks. Dynamically procrastinate B2C users
-                                    after installed base benefits.
-                                    <br />
-                                    <br /> Dramatically visualize customer directed convergence
-                                    without revolutionary ROI.
-                                </p>
+                            <div className=' w-full'>
+                                <div className='flex  justify-center align-center border-b-2 text-4xl p-3 hover:text-[#E6034B] mx-4'> {/**Text Color will be applied on the selected language*/}
+                                    <div className=''>
+                                        English
+                                    </div>
+                                </div>
+                                <div className='flex  justify-center align-center border-b-1 text-4xl p-3 hover:text-[#E6034B]'>
+                                    <div className=''>
+                                        العربية               </div>
+                                </div>
+
                             </div>
+                        </div>
+
 
                     </Drawer>
 
