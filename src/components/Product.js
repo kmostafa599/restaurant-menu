@@ -75,7 +75,7 @@ VAT EXCLUDED</h5>
         <div className=''>
         <Link to='/store'>
           <button  className='w-[40px] h-[40px] z-10 absolute top-5 m-5 bg-white p-3 shadow rounded '>
-            <svg className='rotate-180' width="16" height="16" viewBox="0 0 24 26" fill="currentColor"  ><path d="M6.92 1c.255 0 .509.138.636.275l10.158 11.157c.381.413.381.964 0 1.377L7.683 24.69c-.381.413-.89.413-1.27 0-.381-.413-.381-.964 0-1.377l9.396-10.192L6.287 2.652c-.381-.413-.381-.964 0-1.378A.932.932 0 016.92 1z" fill="null" stroke="null" stroke-width="0.25"></path>
+            <svg className='rotate-180 '  width="16" height="16" viewBox="0 0 24 26" fill="currentColor"  ><path d="M6.92 1c.255 0 .509.138.636.275l10.158 11.157c.381.413.381.964 0 1.377L7.683 24.69c-.381.413-.89.413-1.27 0-.381-.413-.381-.964 0-1.377l9.396-10.192L6.287 2.652c-.381-.413-.381-.964 0-1.378A.932.932 0 016.92 1z" fill="null" stroke="null" stroke-width="0.25"></path>
             </svg>
           </button>
         </Link>
@@ -92,7 +92,7 @@ VAT EXCLUDED</h5>
         </div>
         <div className='text-3xl'>icon</div>
         <div className='text-2xl'>description</div>
-        <div className='w-full m-3 divide-y divide-slate-400  space-y-5 text-2xl'>
+        <div className='w-full m-3 divide-y divide-slate-200  space-y-5 text-2xl'>
           <div className='grid grid-cols-2 '>
             <div>Chiken</div>
             <div className='justify-self-end text-[#E6034B]'>
@@ -111,10 +111,10 @@ VAT EXCLUDED</h5>
         </div>
         <div>Add</div>
         <div>required</div>
-        <div className='w-full m-3 divide-y divide-slate-400  space-y-5'>
+        <div className='w-full m-3 divide-y divide-slate-200  space-y-5'>
           <div className='grid grid-cols-2 '>
             <div>Chiken</div>
-            <div className='justify-self-end text-[#E6034B]'>
+            <div className='justify-self-end text-[#E6034B] font-light'>
               AED59.00</div>
           </div>
           <div className='grid grid-cols-2 '>
