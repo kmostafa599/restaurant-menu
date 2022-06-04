@@ -82,6 +82,7 @@ const Navigation = React.forwardRef((props, ref) => {
     {
 
       category_id: 1,
+      id:1,
       name: null,
       photo: "https://media.istockphoto.com/photos/full-table-of-italian-meals-on-plates-pizza-pasta-ravioli-carpaccio-picture-id1227415751?k=20&m=1227415751&s=170667a&w=0&h=jSWQmXeJbgjpMPbC141v52dN0TATyhHGG20qrgvW1OE=",
       price: "30$",
@@ -89,6 +90,7 @@ const Navigation = React.forwardRef((props, ref) => {
     },
     {
       category_id: 2,
+      id:2,
       name: "Pepsi",
       photo: "https://media.istockphoto.com/photos/full-table-of-italian-meals-on-plates-pizza-pasta-ravioli-carpaccio-picture-id1227415751?k=20&m=1227415751&s=170667a&w=0&h=jSWQmXeJbgjpMPbC141v52dN0TATyhHGG20qrgvW1OE=",
       price: "40$",
@@ -96,6 +98,7 @@ const Navigation = React.forwardRef((props, ref) => {
     },
     {
       category_id: 2,
+      id:3,
       name: "Cola",
       photo: "https://media.istockphoto.com/photos/full-table-of-italian-meals-on-plates-pizza-pasta-ravioli-carpaccio-picture-id1227415751?k=20&m=1227415751&s=170667a&w=0&h=jSWQmXeJbgjpMPbC141v52dN0TATyhHGG20qrgvW1OE=",
       price: "10$",
@@ -111,7 +114,7 @@ const Navigation = React.forwardRef((props, ref) => {
         <Box sx={{ width: "100%", borderColor: 'divider' }}>
           <Tabs TransitionProps={{ timeout: 3000 }} className="" textColor="" style={{ color: "#e6034b" }} TabIndicatorProps={{ style: { transitionDuration: '1000', backgroundColor: "#e6034b" } }} variant="scrollable" scrollButtons="auto" aria-label="scrollable auto yabs example" value={value} onChange={handleChange} >
             {categories.map((data, index) => (
-              <Tab className='p-2 text-2xl'icon={<Avatar className='mb-3' sx={{ width: '175px', height: '100px', borderRadius: '5%', }} src={data.photo} />} label={data.name} {...a11yProps(0)} />
+              <Tab className='p-2 text-2xl'icon={<Avatar alt='pic' className='mb-3' sx={{ width: '175px', height: '100px', borderRadius: '5%', }} src={data.photo} />} label={data.name} {...a11yProps(0)} />
             ))}
           </Tabs>
         </Box>

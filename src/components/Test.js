@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Skeleton } from '@mui/material';
 import Card from './Card';
+import { Link } from 'react-router-dom';
 
 
 const useStyles = makeStyles(theme => ({
@@ -49,8 +50,8 @@ export default function Test(props) {
             <AccordionDetails >
               <Grid container spacing={2} style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }} >
                 <Grid style={{ width: "100%" }} item >
-                  {product.length ? product.map((data, index) => (
-                    <Card />
+                  {product.length ? product.map((item, index) => (
+                      <Card product={item} />
                   )
                   ) : <h1>No products available</h1>}
                 </Grid>
@@ -59,7 +60,7 @@ export default function Test(props) {
             </AccordionDetails>
           </Accordion>
         </div>
-        ) : (
+      ) : (
         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
           <Skeleton variant="text" width={560} height={66} style={{ width: "100%", }} />
         </div>
